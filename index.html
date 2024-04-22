@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Landing Page</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        #changeable-text { 
+            padding: 20px; 
+            background-color: #f0f0f0; 
+            border: 1px solid #ccc; 
+            text-align: center; 
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Welcome to Our Website!</h1>
+<div id="changeable-text">Click me to change text!</div>
+
+<script src="https://code.jquery.com/jquery-1.8.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#changeable-text').click(function() {
+            $(this).text("Text has been changed. Click again to reset.");
+        });
+    });
+</script>
+
+</body>
+</html>
